@@ -29,6 +29,16 @@
         <form id="cipherForm">
             <label for="ciphertext">Enter Ciphertext:</label>
             <textarea id="ciphertext" name="ciphertext" rows="6" cols="50" placeholder="Enter your ciphertext here..."></textarea>
+            
+            <fieldset>
+                <legend>Select Models (at least one):</legend>
+                <label><input type="checkbox" name="model" value="transformer"> Transformer</label>
+                <label><input type="checkbox" name="model" value="ffnn"> Feedforward Neural Network (FFNN)</label>
+                <label><input type="checkbox" name="model" value="lstm"> Long Short-Term Memory (LSTM)</label>
+                <label><input type="checkbox" name="model" value="rf"> Random Forest (RF)</label>
+                <label><input type="checkbox" name="model" value="nb"> Naive Bayes (NB)</label>
+            </fieldset>
+            
             <button type="button" onclick="showResults()">Identify Cipher</button>
         </form>
 

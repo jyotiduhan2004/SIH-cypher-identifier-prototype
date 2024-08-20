@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Neural Cipher Identifier</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <h1>Neural Cipher Identifier</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="intro">
+            <h2>Identify Cipher Type with AI</h2>
+            <p>Enter a short ciphertext and get predictions on the type of cipher used.</p>
+        </section>
+
+        <form id="cipherForm">
+            <label for="ciphertext">Enter Ciphertext:</label>
+            <textarea id="ciphertext" name="ciphertext" rows="6" cols="50" placeholder="Enter your ciphertext here..."></textarea>
+            <button type="button" onclick="showResults()">Identify Cipher</button>
+        </form>
+
+        <section id="results">
+            <h2>Results</h2>
+            <p id="ciphertextLength">Ciphertext Length: 0 chars</p>
+            <h3>Architectures:</h3>
+            <div id="resultsList">
+                <!-- Results will be displayed here -->
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
